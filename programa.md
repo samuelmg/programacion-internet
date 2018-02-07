@@ -1,12 +1,12 @@
 # Programa
 
-## Sesión 1
+## Presentación
 
 * Presentación
 * Forma de Evaluación general
 * Evaluación de tareas y ejercicios
 
-## Sesión 2
+## Introducción HTML / PHP
 
 * HTML
   * Tags: doctype, html, head, title, body, h1, p, a, br, img, hr, ol, ul, li
@@ -44,7 +44,7 @@
 * Utilizar label para cada campo
 
 1. Enviar información a sí misma utilizando método GET
-2. Utlizar `if()` para determinar si se recibe la información; realizar pruebas utilizando `isset()`, `si_null()`
+2. Utilizar `if()` para determinar si se recibe la información; realizar pruebas utilizando `isset()`, `is_null()`
 2. Enviar información a sí misma utilizando método POST
 
 #### Ejercicio 1.3 Agenda (Base de Datos)
@@ -62,4 +62,10 @@
 
 1. Demostrar inyección de SQL.
 2. Proteger inserción de SQL.
+
+## Actualización PHP 7.1 / MySQL 5.7
+
+1. Crear nuevo contenedor Laravel 5.* en servidor Ubuntu
+2. Actualizar servidor e instalación de Laravel siguiendo la guía: [Install Laravel 5.5 at Codeanywhere with PHP 7.1 and MySQL 5.7](https://wpkb.org/install-laravel-5-5-at-codeanywhere-with-php-7-1-and-mysql-5-7/).
+
 
