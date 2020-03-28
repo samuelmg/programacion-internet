@@ -1,74 +1,85 @@
-# Requisitos Proyecto Final
+# Proyecto Final
 
-Se espera un sistema web utilizando Laravel como framework de desarrollo.
+El objetivo es que experimenten desarrollar un sistema pensando como un *full stack developer*, es decir que diseñen tanto el *backend* (base de datos, relaciones, validaciones), así como el *frontend* (vistas, html, js, css) y con ello lograr un sistema que brinde una buena experiencia de uso al usuario final.
 
-## Base de datos
+## Almacenamiento de la información (Database)
 
-* Uso de migraciones para crear y modificar tablas.
-* Implementar al menos un Seeder.
-* Generar datos de prueba para al menos una tabla.
+- Esquema de la base de datos o sistema de almacenamiento (Migrations).
+- Generación de datos de prueba o catálogos (Seeders).
+- Conservar registo de creación y edición de registros (Time Stamps).
 
-## Autenticación, autorización y seguridad
+## Autenticación y autorización
 
-* Realizar autenticación de usuarios mediante correo y contraseña.
-* Validar toda información que se reciba a partir de una formulario.
-* Crear e implementar un middleware.
-* Implementar gates y policies.
-* **Extra:** Passport / Socialite.
+- Registro y autenticación de usuarios (Login/logout, Sessions).
+- Restringir, permitir o modificar el comportamiento, opciones o acciones en función del tipo de usuario o condiciones (Gates, Policies, Middleware).
 
-## GUI
+## Validación
 
-* Crear vistas utilizando blade
-* Crear al menos un layout e implementarlo en vistas
-	* Mostrar nombre, nombre de usuario o correo del usuario.
-	* Mostrar opción para ingresar (login) o salir (logout) del sistema según corresponda.
-	* Mostrar menú de navegación.
-* Implementar Bootstrap u otro framework de css.
-* **Importante:** Mostrar mensajes al usuario cuando:
-	* Exista un error de validación al completar un formulario.
-	* Se haya completado una tarea, sea con éxito, con errores o si require información adicional. (Ej. Al crear, eliminar o editar).
-	* Existan listados vacíos.
-* Cuando exista un error al validar un formulario o se esté editando información de un recurso existente, el formulario deberá mostrar la información capturada o a editar.
-* Los enlaces o inclusión de recursos locales (css, js, etc) deberán generarse utilizando los helpers adecuados. (Ej. action, route, asset).
+- Todo formulario deberá ser validado en el lado del servidor.
+- Agregar validaciones en el cliente mediante html5 o js.
 
-## Eloquent (Modelos, consultas)
+## UI/UX
 
-* Definir una relación de cada uno de los siguientes tipos y sus inversas dentro de los modelos:
-	* "uno a muchos" (1:n)
-	* "muchos a muchos" (n:n)
-	* polimórfica o polimórfica muchos a muchos.
-* Utilizar "Eager Loading" al consultar múltiples registros con n relaciones.
-* Utilizar al menos en una consulta "Constraining Eager Load".
-* Declarar "fillable" o "guarded" en al menos un modelo.
-* Almacenar información adicional en al menos una tabla pivote.
-* Implementar "time stamps" en al menos un modelo.
-* Implementar "Soft Delete" en al menos un modelo.
-* Crear al menos un "accessor" y un "muttator" en un modelo.
+- Implementar diseño responsivo mediante un framework de css (Bootsrap).
+- Reutilizar elementos comunes (layout, partial views).
+- Mostrar login/logout.
+- Mostrar errores de validación de formularios.
+- Mostrar mensajes de éxito al crear, editar o eliminar registros.
+- Navegación dentro de la aplicación (navbar, menu, breadcrumb).
+- Carga de recursos locales (css, js) sin utilizar rutas relativas (assset).
 
-## Controladores
+## ORM: Object-Relational mapping (Eloquent)
 
-* Crear al menos un controlador tipo resource.
-* **Extra:** Crear un controlador tipo resource anidado.
-* Crear al menos un método personalizado dentro de un controlador.
+- Implementar clases que describan el sistema de almacenamiento (tablas y sus relaciones) (Modelos).
+- Utilizar estas clases y métodos para consulta y almacenamiento de la información.
+
+## MVC
+
+Implementar el uso de los modelos y vistas mediante controladores:
+
+- Implementar al menos un CRUD (Resource Controller).
+
+## Relaciones
+
+- La información almacenada deberá estar relacionada:
+	+ Uno a muchos (1:m).
+	+ Muchos a muchos (m:n).
+	+ Crear una relación con más de un modelo (Polimórfica).
+
+## Consulta, creación y eliminación de información
+
+- Consulta utilizando carga anticipada de información relacionada (Eager loading).
+- Implementar borrado lógico (Soft Deletes).
+- Modificar información al consultar o guardar (Accessors, Muttators).
+- Consultas avanzadas (Implementar al menos una de ellas):
+	+ Limitar elementos relacionados consultados (Constraint eager loading).
+	+ Limitar elementos consultados en función de la existencia de una relación (Has, Where Has).
+	+ Aplicar condiciones a distintas consultas (Scopes).
 
 ## API
 
-* Crear y consultar al menos un controlador con al menos un método que regrese un json.
+- Crear ruta que realice una consulta y cuya respuesta sea un json
 
 ## Archivos
 
-Se deberá crear e implementar un cargador de archivos que permita:
+- Carga de archivos, uno o muchos a la vez.
+- Mostrar archivo o listado de archivos.
+- Eliminar o reemplazar archivos.
 
-* Cargar uno o muchos archivos a la vez.
-* Listar los archivos o mostrar el archivo cargado.
-* Eliminar el archivo.
+## Correo electrónico
 
-## Correo Electrónico
+Implementar el envío de correo electrónico en al menos una de las siguientes modalidades:
 
-* Implementar verificación de correo electrónico al realizar registro.
-* Envío de correo electrónico personalizado.
+- Verificación de correo al crear cuenta de usuario.
+- Envío de correo electrónico personalizado.
 
-## Sheduler y Jobs
+## Extras
 
-* Implementar la ejecución de una tarea recurrente de forma automática.
-* Implementar el uso de Jobs para la ejecución de múltiples tareas.
+Implementar cualquiera de los siguiente temas les brindará puntos adicionales, los temas se encuentran en lo que considero en orden de dificultad, del más sencillo al más complejo, no por su dificultad sino porque hay que leer más documentación específica.
+
+- Relación muchos a muchos con información particular a la relación (información adicional en tabla pivote).
+- Generar documento pdf, excel, word, etc.
+- Programación de tareas recurrentes (Task Scheduling).
+- Creación de colas de tareas (Jobs).
+- Autenticación mediante credenciales de terceros (google, twitter, facebook, github).
+- Implementar sistema de pago.
