@@ -5,7 +5,7 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 ## Almacenamiento de la información (Database)
 
 - Esquema de la base de datos o sistema de almacenamiento (Migrations).
-- Generación de datos de prueba o catálogos (Seeders).
+- Generación de datos de prueba o catálogos (Seeders & Factories).
 - Conservar registo de creación y edición de registros (Time Stamps).
 
 ## Autenticación y autorización
