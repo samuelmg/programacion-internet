@@ -10,7 +10,7 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 
 ## Autenticación y autorización
 
-- Registro y autenticación de usuarios (Login/logout, Sessions).
+- Registro y autenticación de usuarios (login/logout, Sessions).
 - Restringir, permitir o modificar el comportamiento, opciones o acciones en función del tipo de usuario o condiciones (Gates, Policies, Middleware).
 
 ## Validación
@@ -20,13 +20,12 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 
 ## UI/UX
 
-- Implementar diseño responsivo mediante un framework de css (Bootsrap).
-- Reutilizar elementos comunes (layout, partial views).
+- Implementar diseño responsivo. Se sugiere utilizar un framework de CSS.
+- Se sugiere reutilizar elementos comunes (layout, partial views).
 - Mostrar login/logout.
 - Mostrar errores de validación de formularios.
 - Mostrar mensajes de éxito al crear, editar o eliminar registros.
 - Navegación dentro de la aplicación (navbar, menu, breadcrumb).
-- Carga de recursos locales (css, js) sin utilizar rutas relativas (assset).
 
 ## ORM: Object-Relational mapping (Eloquent)
 
@@ -35,8 +34,6 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 
 ## MVC
 
-Implementar el uso de los modelos y vistas mediante controladores:
-
 - Implementar al menos un CRUD (Resource Controller).
 
 ## Relaciones
@@ -44,17 +41,12 @@ Implementar el uso de los modelos y vistas mediante controladores:
 - La información almacenada deberá estar relacionada:
 	+ Uno a muchos (1:m).
 	+ Muchos a muchos (m:n).
-	+ Crear una relación con más de un modelo (Polimórfica).
 
 ## Consulta, creación y eliminación de información
 
-- Consulta utilizando carga anticipada de información relacionada (Eager loading).
+- Consulta utilizando carga anticipada de información relacionada (Eager loading). //Solo en Laravel
 - Implementar borrado lógico (Soft Deletes).
 - Modificar información al consultar o guardar (Accessors, Muttators).
-- Consultas avanzadas (Implementar al menos una de ellas):
-	+ Limitar elementos relacionados consultados (Constraint eager loading).
-	+ Limitar elementos consultados en función de la existencia de una relación (Has, Where Has).
-	+ Aplicar condiciones a distintas consultas (Scopes).
 
 ## API
 
@@ -77,6 +69,7 @@ Implementar el envío de correo electrónico en al menos una de las siguientes m
 
 Implementar cualquiera de los siguiente temas les brindará puntos adicionales, los temas se encuentran en lo que considero en orden de dificultad, del más sencillo al más complejo, no por su dificultad sino porque hay que leer más documentación específica.
 
+- Crear una relación con más de un modelo (Polimórfica).
 - Relación muchos a muchos con información particular a la relación (información adicional en tabla pivote).
 - Generar documento pdf, excel, word, etc.
 - Programación de tareas recurrentes (Task Scheduling).
