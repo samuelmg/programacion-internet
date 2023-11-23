@@ -24,7 +24,7 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 - Se sugiere reutilizar elementos comunes (layout, partial views, components). - 20
 - Mostrar login/logout. - 10
 - Mostrar errores de validación de formularios. - 20
-- Mostrar mensajes de éxito al crear, editar o eliminar registros. - 10
+- Mostrar mensajes de éxito al crear, editar o eliminar registros. - 10 (opcional/extra)
 - Navegación dentro de la aplicación (navbar, menu, breadcrumb). - 20
 
 ## ORM: Object-Relational mapping (Eloquent) (100)
@@ -50,13 +50,13 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 
 ## API (20)
 
-- Crear ruta que realice una consulta y cuya respuesta sea un JSON. - 20
+- Crear ruta que realice una consulta y cuya respuesta sea un JSON. - 20 (opcional/extra)
 
 ## Archivos (100)
 
 - Carga de archivos, uno o muchos a la vez. - 50
 - Mostrar archivo o listado de archivos. - 30
-- Eliminar o reemplazar archivos. - 20
+- Eliminar o reemplazar archivos. - 20 (opcional/extra)
 
 ## Correo electrónico (100)
 
