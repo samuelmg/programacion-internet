@@ -59,7 +59,7 @@ El objetivo es que experimenten desarrollar un sistema pensando como un *full st
 ## Archivos (100)
 
 - Carga de archivos, uno o muchos a la vez. - 50
-- Mostrar archivo o listado de archivos (25) y descarga (25). - 50
+- (Mostrar archivo) o (listado de archivos y descarga). - 50
 - Eliminar o reemplazar archivos. - 20 (opcional/extra)
 
 ## Correo electrónico (100)
